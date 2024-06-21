@@ -13,6 +13,11 @@ spec:
   - name: nginx-labels
     image: nginx:1.14.2
     imagePullPolicy: Always
+    env:
+      - name: course
+        value: "DevOps"
+      - name: duration
+        value: "120hrs"
     ports:
     - containerPort: 80
     resources:
@@ -22,3 +27,4 @@ spec:
       limits:
         cpu: "200m"
         memory: "256Mi"
+    
