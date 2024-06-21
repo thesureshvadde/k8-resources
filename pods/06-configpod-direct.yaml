@@ -6,6 +6,6 @@ spec:
   containers:
   - name: configpod-direct
     image: nginx
-    env:
+    envFrom:
     - configMapRef:
         name: course-config
