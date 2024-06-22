@@ -28,4 +28,4 @@ spec:
       protocol: TCP
       port: 80
       targetPort: http-web-svc
-      nodeport: 30007
+      # nodePort: 30007
